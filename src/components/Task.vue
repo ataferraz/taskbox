@@ -39,3 +39,16 @@
     },
   };
 </script>
+
+<!--src/components/Task.vue>-->
+
+<!-- This is the input for our task title. 
+     In practice we would probably update the styles for this element but for this tutorial, 
+     let's fix the problem with an inline style:-->
+<input
+  type="text"
+  :readonly="true"
+  :value="this.task.title"
+  placeholder="Input title"
+  style="text-overflow: ellipsis;"
+/>
